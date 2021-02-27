@@ -54,7 +54,10 @@ body {
 
 .nav-link:hover {
     color: #F05454;
+    font-family: 'Roboto black';
     border-bottom: 3px solid #DDDDDD;
+    text-decoration: none;
+    transition: border-bottom 1.5s color 1.5s font-family 1.5s;
 }
 
 .hero-img {
@@ -239,6 +242,7 @@ p {
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
     /*     color: hsl(0, 0%, 100%); */
+    width: 25%;
     background-color: #F05454;
     font-family: 'Roboto black';
     font-size: 13px;
@@ -408,26 +412,6 @@ footer i {
 footer i:hover {
     /* background: linearGradient(#515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529); */
     color: #F05454;
-}
-
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
 }
 
 
