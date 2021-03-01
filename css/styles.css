@@ -42,26 +42,31 @@ body {
     font-family: 'Courgette', cursive;
 }
 
+.navbar-brand:hover,
+.navbar-brand:link {
+    color: #fff;
+}
+
 .nav-item {
-    padding: 0 18px;
+    padding: 0 20px;
 }
 
 .nav-link {
     font-size: 1.2rem;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif !important;
     color: #F05454;
 }
 
 .nav-link:hover {
     color: #F05454;
-    font-family: 'Roboto black';
+    font-family: 'Roboto black', sans-serif !important;
     border-bottom: 3px solid #DDDDDD;
     text-decoration: none;
-    transition: border-bottom 1.5s color 1.5s font-family 1.5s;
+    transition: font-family .5s, border-bottom .5s;
 }
 
 .hero-img {
-    background-image: url("../images/hero.jpg");
+    background-image: linear-gradient(rgba(48, 71, 94, 0.3), rgba(48, 71, 94, 0.3)), url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -136,14 +141,17 @@ body {
 /* BUTTONS */
 
 .my-btn {
+    color: #222831;
     margin: 3% 7%;
     padding: 7% auto;
     background-color: #F05454;
-    font-family: 'Roboto black';
+    font-family: 'Roboto black', sans-serif !important;
     letter-spacing: 1px;
+    ;
 }
 
 .my-btn i {
+    color: #222831;
     margin-right: 8px;
 }
 
@@ -169,7 +177,7 @@ body {
 h2 {
     color: #30475E;
     margin-bottom: 7%;
-    font-family: 'Roboto black';
+    font-family: 'Roboto black', sans-serif !important;
 }
 
 h3 {
@@ -182,11 +190,11 @@ h3 {
 
 h4 {
     color: #F05454;
-    font-family: 'Roboto black';
+    font-family: 'Roboto black', sans-serif !important;
 }
 
 .profile-text {
-    font-family: 'Roboto light';
+    font-family: 'Roboto light', sans-serif !important;
     line-height: 18pt;
     font-size: 1.1rem;
     padding: 4% 6%;
@@ -201,7 +209,7 @@ h4 {
 
 .about-box,
 p {
-    font-family: 'Roboto light';
+    font-family: 'Roboto light', sans-serif !important;
 }
 
 .about-img {
@@ -213,7 +221,7 @@ p {
     width: 65%;
     height: 50%;
     border-radius: 80%;
-    box-shadow: 4px 4px 4px #24272c;
+    box-shadow: 3px 3px 3px #24272c;
     /* margin: 5% 10%; */
 }
 
@@ -227,7 +235,7 @@ p {
     width: 100%;
     height: 28px;
     margin-bottom: 15px;
-    box-shadow: 2px 2px 2px #24272c;
+    box-shadow: 1px 1px 1px #24272c;
     position: relative;
 }
 
@@ -244,7 +252,7 @@ p {
     /*     color: hsl(0, 0%, 100%); */
     width: 25%;
     background-color: #F05454;
-    font-family: 'Roboto black';
+    font-family: 'Roboto black', sans-serif !important;
     font-size: 13px;
     font-weight: bold;
     left: 0;
@@ -266,7 +274,7 @@ p {
 .progress_number {
     color: #222831;
     font-size: 13px;
-    font-family: 'Roboto black';
+    font-family: 'Roboto black', sans-serif !important;
     height: 28px;
     line-height: 28px;
     position: absolute;
@@ -294,22 +302,22 @@ p {
     color: #30475E;
     display: inline-block;
     cursor: pointer;
-    transition: 0.3s;
+    transition: color 0.3s;
     margin: 30px;
     padding: 10px 16px;
-    font-family: 'Roboto regular';
+    font-family: 'Roboto regular', sans-serif !important;
     font-size: 1.25rem;
 }
 
 .btn-all-active {
-    font-family: 'Roboto black';
+    font-family: 'Roboto black', sans-serif !important;
     border-radius: 5%;
-    box-shadow: 1px 1px 1px #30475E;
+    box-shadow: .5px .5px .5px #30475E;
     background-color: #F05454;
 }
 
 .btn-active:focus {
-    font-family: 'Roboto black';
+    font-family: 'Roboto black', sans-serif !important;
     border-radius: 5%;
     box-shadow: 1px 1px 1px #30475E;
     background-color: #F05454;
@@ -337,7 +345,7 @@ p {
     position: relative;
     text-align: center;
     color: white;
-    font-family: 'Roboto regular';
+    font-family: 'Roboto regular', sans-serif !important;
     font-size: 1.1rem;
 }
 
@@ -394,7 +402,7 @@ footer {
     background-color: #222831;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Roboto regular';
+    font-family: 'Roboto regular', sans-serif !important;
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.705);
 }

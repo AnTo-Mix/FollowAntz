@@ -68,12 +68,22 @@ $('.js--wp-5').waypoint(function() {
     $('.js--wp-5').addClass('animate__animated').addClass('animate__slideInLeft');
 }, { offset: '100%' });
 
-$('.js--wp-6').waypoint(function() {
+$('.js--wp-6').waypoint(function(direction) {
     $('.js--wp-6').css('opacity', '1');
     $('.js--wp-6').addClass('animate__animated').addClass('animate__slideInUp');
     // $('.btn-tab').addClass('btn-all-active');
     document.getElementsByClassName("btn-tab")[0].classList.add("btn-all-active");
     document.getElementById("all").style.display = "flex";
+
+    if ($('.btn-tab').hasClass('btn-active')) {
+        document.getElementsByClassName("btn-tab")[0].classList.remove("btn-all-active");
+        document.getElementById("all").style.display = "none";
+    }
+    if ($('.btn-tab:first').hasClass('btn-active')) {
+        document.getElementById("all").style.display = "flex";
+    }
+
+
 }, { offset: '100%' });
 
 
