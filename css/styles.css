@@ -396,15 +396,121 @@ p {
 }
 
 
+/*---------------------CONTACT -------------------------------*/
+
+#contact {
+    background-image: linear-gradient(rgba(14, 18, 22, 0.4), rgba(14, 18, 22, 0.4)), url("../images/contact.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #fff;
+}
+
+#contact p {
+    color: #f05454e5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 5%;
+}
+
+#contact .content {
+    backdrop-filter: blur(15px);
+    border-radius: 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    margin: 5% auto;
+    width: 55%;
+    height: 500px;
+    padding: 3% 3%;
+    font-family: 'Roboto black', sans-serif !important;
+}
+
+.content .field {
+    height: 40px;
+    width: 80%;
+    display: flex;
+    margin: 2% auto;
+    position: relative;
+}
+
+.field input {
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: #f5f5f5;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.field textarea {
+    height: 200%;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    color: #f5f5f5;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    resize: none;
+}
+
+.content button {
+    margin: 8% 0;
+    width: 20%;
+    height: 40px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    background: #F05454;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.field:nth-child(2) {
+    margin-top: 10px;
+}
+
+.field:nth-child(3) {
+    margin-top: 10px;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: .6;
+}
+
+
 /* -------------------FOOTER--------------------- */
 
 footer {
-    background-color: #222831;
+    background-color: #fff;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Roboto regular', sans-serif !important;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.705);
+    color: #222831;
 }
 
 footer div {
@@ -413,7 +519,7 @@ footer div {
 
 footer i {
     /* display: block; */
-    color: #DDDDDD;
+    color: #30475E;
     margin: 20px 10px;
 }
 
@@ -430,7 +536,9 @@ footer i:hover {
 .js--wp-3,
 .js--wp-4,
 .js--wp-5,
-.js--wp-6 {
+.js--wp-6,
+.js--wp-7,
+.js--wp-8 {
     opacity: 0;
     /* animation-duration: 1s; */
 }
