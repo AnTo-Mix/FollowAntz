@@ -88,11 +88,8 @@ $('.js--wp-6').waypoint(function(direction) {
 $('.js--wp-7').waypoint(function() {
     $('.js--wp-7').css('opacity', '1');
     $('.js--wp-7').addClass('animate__animated').addClass('animate__slideInUp');
-}, { offset: '100%' });
-$('.js--wp-8').waypoint(function() {
-    $('.js--wp-8').css('opacity', '1');
-    $('.js--wp-8').addClass('animate__animated').addClass('animate__slideInLeft');
-}, { offset: '100%' });
+    console.log('fdsff');
+}, { offset: '-80%' });
 
 
 function frame1() {

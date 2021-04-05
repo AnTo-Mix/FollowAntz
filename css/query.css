@@ -87,7 +87,6 @@
     }
     .hero-img {
         background-attachment: scroll;
-        height: 70vh;
     }
     .hero-text-box h1 {
         font-size: 1.5rem;
@@ -179,7 +178,7 @@
         height: 200px;
     }
     #contact {
-        height: 70vh;
+        height: auto;
         background-attachment: scroll;
     }
     #contact p {
@@ -241,7 +240,6 @@
     }
     .hero-img {
         background-attachment: scroll;
-        height: 100vh;
     }
     .hero-text-box h1 {
         font-size: 1.25rem;
@@ -317,7 +315,7 @@
     }
     /*----------------CONTACT-----------------*/
     #contact {
-        height: 100vh;
+        height: auto;
         background-attachment: scroll;
     }
     #contact p {
